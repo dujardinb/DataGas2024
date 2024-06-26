@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="5dp"
+    android:background="#fffef3f6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Src.Releve">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/laytout0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+
+                <!--Bandeau Site   -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:background="@drawable/border"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="@string/content_releve_001"
+                        android:textSize="25dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/releve_site"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Bandeau Niveau 1    -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:background="@drawable/border"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="@string/content_releve_001_002"
+                        android:textSize="25dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/releve_niveau1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Bandeau Niveau 2    -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:background="@drawable/border"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="@string/content_releve_003"
+                        android:textSize="25dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/releve_niveau2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/releve_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textColor="#3d5c5c"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <!--AFFICHAGE DU TABLEAU DE SAISIE
+                        ******************************  -->
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_004"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+                            <TextView
+                                android:id="@+id/releve_dateDerReleve"
+                                android:background="@drawable/border"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_005"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+                            <TextView
+                                android:background="@drawable/border"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_006"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+                            <TextView
+                                android:background="@drawable/border"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+                        </TableRow>
+
+                        <!-- Ouverture de la Vanne -->
+                        <TableRow>
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_007"
+                                android:textSize="20sp"
+                                android:textStyle="italic|bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve__vanne_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="3"
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:contentDescription = "@string/content_releve_008"
+                                android:ems="10"
+                                android:id="@+id/releve__vanne"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="%"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- Vitesse  -->
+                        <TableRow>
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_009"
+                                android:textSize="20sp"
+                                android:textStyle="italic|bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_vitesse_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="5"
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_vitesse"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="m/s"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- Dépression -->
+                        <TableRow>
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_010"
+                                android:textSize="20sp"
+                                android:textStyle="italic|bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_depression_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="8"
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_depression"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="numberDecimal|numberSigned"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:padding="5dp" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_011"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- CH4 -->
+                        <TableRow>
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_012"
+                                android:textSize="20sp"
+                                android:textStyle="italic|bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_ch4_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="5"
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_ch4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="%"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- CO2 -->
+                        <TableRow>
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_013"
+                                android:textSize="20sp"
+                                android:textStyle="italic|bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_co2_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="5"
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_co2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="%"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- O2 -->
+                        <TableRow>
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="O2"
+                                android:textSize="20sp"
+                                android:textStyle="italic|bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_O2_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="5"
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_O2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textColor="#800000"
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="%"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- H2S -->
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_014"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_H2S_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="6"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_H2S"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_015"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- CO -->
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_016"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_CO_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="6"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_CO"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_017"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- H2 -->
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_018"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_H2_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:maxLength="5"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:id="@+id/releve_H2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="%"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <!-- Temperature -->
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_0117"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_temperature_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+
+                                android:id="@+id/releve_temperature"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="numberSigned|numberDecimal"
+                                android:maxLength="6"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="°C"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+
+                        <!-- Débit Calculé -->
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_019"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_débit_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+
+                                android:id="@+id/releve_debit"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:background="@drawable/border1"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="@string/content_releve_020"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+
+
+                        <!-- Commentaire -->
+                        <TableRow>
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="italic"
+                                android:text="@string/content_releve_021" />
+                            <TextView
+                                android:background="@drawable/border1"
+                                android:id="@+id/releve_commentaire_old"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:text="XXXXX"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/releve_commentaire"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="45"
+                                android:background="@drawable/border1"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="text|textMultiLine"
+                                android:maxLines="3"
+                                android:padding="5dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <View
+                            android:layout_height="2dip"
+                            android:background="#FF909090" />
+
+                        <TableRow>
+
+                            <Button
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/releve_bt_saisie_complementaire"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                                android:text="@string/content_releve_022"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/releve_annuler"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:text="@string/content_releve_023"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/releve_valider"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:text="Valider"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

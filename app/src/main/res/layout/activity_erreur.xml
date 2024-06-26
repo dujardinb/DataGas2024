@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_margin="5dp"
+    android:background= "#fffef3f6"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_height="64dp"   >
+        <ImageView
+            android:src="@drawable/exclamation48"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:scaleType="center"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="@string/activity_erreur_001"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/activity_erreur_002" />
+
+
+    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_erreur_003"
+        android:id="@+id/btDetail"
+        android:textAllCaps="false"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_marginEnd="30dp"
+        android:layout_gravity="end|bottom" />
+
+    <Button
+        android:id="@+id/btValider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@drawable/selectorbuttonstyle"
+        android:background="@color/noir_perso"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/activity_erreur_005" />
+
+</LinearLayout>

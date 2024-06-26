@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "project_number": "831069572736",
+    "project_id": "fr-ist-rvd-datagas4",
+    "storage_bucket": "fr-ist-rvd-datagas4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831069572736:android:dd489587e5778dc9ba2065",
+        "android_client_info": {
+          "package_name": "fr.rvd.dsi.bdu.datagas4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831069572736-nak3veu2ukvbireljg31fpa6vu8e99j6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.rvd.dsi.bdu.datagas4",
+            "certificate_hash": "6d91c85e5ef67d587acfa5df743fdd2ed159b7c4"
+          }
+        },
+        {
+          "client_id": "831069572736-nt1u58q617t2i0gqtpvoqpdi5mqpkh3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.rvd.dsi.bdu.datagas4",
+            "certificate_hash": "be80fed6472c24b115bd4f7583914eb69eb0d7e3"
+          }
+        },
+        {
+          "client_id": "831069572736-qnhki0tavtk90mi3rnr4f5f3d57o57dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.rvd.dsi.bdu.datagas4",
+            "certificate_hash": "f04597218d168eea422833a57a98409d643b0ce6"
+          }
+        },
+        {
+          "client_id": "831069572736-rpemol82n136n5ash8trcnb0qoqi6569.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.rvd.dsi.bdu.datagas4",
+            "certificate_hash": "5cc68030dea05e2fa49b36e08ed991b2d54a4855"
+          }
+        },
+        {
+          "client_id": "831069572736-6tmbg3lrsv82pdk03jr61m0vc1828d1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClOdPRwpR1GnOX4AOeFr3hs9AiSmqac6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831069572736-6tmbg3lrsv82pdk03jr61m0vc1828d1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831069572736:android:5864b32b8ef17db8ba2065",
+        "android_client_info": {
+          "package_name": "fr.rvd.dsi.datagas2024"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831069572736-a1kuvmvoeh1f8m32l18r3imhq07kbj30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.rvd.dsi.datagas2024",
+            "certificate_hash": "f04597218d168eea422833a57a98409d643b0ce6"
+          }
+        },
+        {
+          "client_id": "831069572736-6tmbg3lrsv82pdk03jr61m0vc1828d1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClOdPRwpR1GnOX4AOeFr3hs9AiSmqac6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831069572736-6tmbg3lrsv82pdk03jr61m0vc1828d1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

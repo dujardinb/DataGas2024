@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#002699">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/activity_dialog_alert_releve_001"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/DialogAlerte_tvAlerte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:maxLines="3"
+        android:lines="3"
+        android:text="@string/activity_dialog_alert_releve_002"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_height="2dip"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="center"
+        android:background="#002699">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:text="@string/activity_dialog_alert_releve_003"/>
+    </LinearLayout>
+
+<!--Affichage Consigne CH4-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="start"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_dialog_alert_releve_004" />
+
+        <TextView
+            android:id="@+id/DialogAlerte_tvConsigneCH4"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/activity_dialog_alert_releve_005" />
+    </LinearLayout>
+
+    <!--Affichage  Consigne ∆P-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="start"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/activity_dialog_alert_releve_006" />
+
+        <TextView
+            android:id="@+id/DialogAlerte_tvConsigneDeltaP"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/activity_dialog_alert_releve_007" />
+    </LinearLayout>
+
+    <!--Affichage  Consigne v-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="start"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/activity_dialog_alert_releve_008" />
+
+        <TextView
+            android:id="@+id/DialogAlerte_tvConsigneV"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/activity_dialog_alert_releve_009" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/DialogAlerte_apresReglage"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:text="@string/activity_dialog_alert_releve_010" />
+        <Button
+            android:id="@+id/DialogAlerte_valider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:text="@string/activity_dialog_alert_releve_11" />
+    </LinearLayout>
+
+
+</LinearLayout>
